@@ -1,0 +1,186 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>floor.coffeespace</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f5f0;
+      color: #222;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+
+    .header-content h1 {
+      margin: 0;
+      font-size: 50px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .header-content p {
+      font-size: 20px;
+      margin-top: 10px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 18px;
+      background: rgba(0, 100, 50, 0.6);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav {
+      background: #143d29;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .menu-highlight, .gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #143d29;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="banner.jpg" alt="Banner floor.coffeespace">
+  <div class="header-content">
+    <h1>floor.coffeespace</h1>
+    <p>Kopi & Hidangan dengan Sentuhan Elegan</p>
+    <a href="#menu" class="btn">Lihat Menu</a>
+  </div>
+</header>
+
+<nav>
+  <a href="#menu">Menu</a>
+  <a href="#galeri">Galeri</a>
+  <a href="#lokasi">Lokasi</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<section id="menu" class="section">
+  <h2>Menu Unggulan</h2>
+  <div class="menu-highlight">
+    <div class="card">
+      <img src="caramel.jpg" alt="Caramel Macchiato">
+      <h3>Caramel Macchiato</h3>
+      <p>Kombinasi espresso lembut, susu, dan saus karamel yang kaya rasa</p>
+    </div>
+    <div class="card">
+      <img src="meltique.jpg" alt="Meltique Mess Steak">
+      <h3>Meltique Mess Steak</h3>
+      <p>Steak meltique juicy dengan saus khas dan sayur segar</p>
+    </div>
+    <div class="card">
+      <img src="spicy.jpg" alt="Spicy Chicken Quesadilla">
+      <h3>Spicy Chicken Quesadilla</h3>
+      <p>Quesadilla ayam pedas dengan keju meleleh dan saus spesial</p>
+    </div>
+  </div>
+</section>
+
+<section id="lokasi" class="section">
+  <h2>Lokasi Kami</h2>
+  <p>Floor.coffee&space — Jl.Gatot Subroto,Kabupaten Bengkalis, Riau.</p>
+  <p>
+    <a href="https://www.google.com/maps/place/Floor.coffee%26space/@1.4712231,102.1168447,17z"
+       target="_blank">
+       Buka di Google Maps
+    </a>
+  </p>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.503061993217!2d102.1168447!3d1.4712231000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d161729c487941%3A0x96f946f83b1a8231!2sFloor.coffee%26space!5e0!3m2!1sid!2sid!4v1751212772920!5m2!1sid!2sid" 
+    width="100%" height="300" style="border:0;" allowfullscreen="" 
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+
+<section id="kontak" class="section">
+  <h2>Hubungi Kami</h2>
+  <p>Instagram: <a href="https://instagram.com/floor.coffeespace" target="_blank">@floor.coffeespace</a></p>
+  <p>WhatsApp: <a href="https://wa.me/6895141908003" target="_blank">+62 8951-4190-8003</a></p>
+</section>
+
+<footer>
+  &copy; 2025 floor.coffeespace | Rasa yang Menyentuh Jiwa
+</footer>
+
+</body>
+</html>
